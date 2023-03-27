@@ -1,5 +1,5 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template></template>
+
+<script setup>
+import Card from '../components/itemCard.vue'
+</script>
