@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <h2>{{ title }}</h2>
     <img :src="image" alt="" />
@@ -17,4 +17,13 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped></style> -->
+<script setup>
+const props = defineProps({
+  todo: Object
+})
+</script>
+
+<template>
+  <li>{{ todo.text }}</li>
+</template>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <img src="" alt="" />
+    <img :src="image" alt="" />
     <p>{{ description }}</p>
   </div>
 </template>
