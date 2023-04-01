@@ -1,20 +1,20 @@
 <template>
-  <div>
+  <!-- <div>
     <h2>{{ title }}</h2>
     <img :src="image" alt="" />
     <p>{{ description }}</p>
-  </div>
+  </div> -->
 </template>
 
 <script>
-export default {
-  name: 'itemCard',
-  props: {
-    title: String,
-    description: String,
-    image: String
-  }
-}
+// export default {
+//   name: 'itemCard',
+//   props: {
+//     title: String,
+//     description: String,
+//     image: String
+//   }
+// }
 </script>
 
 <style scoped></style>
