@@ -1,7 +1,8 @@
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="Braincell Gray Market" />
+      <h1 class="green">{{ title }}</h1>
+      <h3>{{ quote }}</h3>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -17,7 +18,10 @@
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+
+const title = 'Braincell Market'
+const quote = 'Wish to get smarter? We got your back!'
 </script>
 
 <style scoped>
@@ -27,12 +31,9 @@ header {
 }
 
 nav {
-  width: 70%;
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  padding: 1rem 0;
-  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 nav a.router-link-exact-active {
@@ -53,8 +54,14 @@ nav a:first-of-type {
   border: 0;
 }
 header .wrapper {
-  display: flex;
-  place-items: flex-start;
-  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+header .green {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+  color: #b5bec6;
 }
 </style>
