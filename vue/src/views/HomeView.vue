@@ -1,10 +1,13 @@
 <template>
+  <div class="items" v-if="page === 'products'">
     <HelloWorld />
+  </div>
 </template>
 
 <script setup>
 import HelloWorld from '../components/HelloWorld.vue'
 
+const page = 'products'
 </script>
 
 <style scoped>
