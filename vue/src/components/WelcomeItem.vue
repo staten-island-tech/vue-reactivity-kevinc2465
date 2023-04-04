@@ -1,29 +1,17 @@
 <template>
-  <!-- <div>
-    <h2>{{ title }}</h2>
-    <img :src="image" alt="" />
-    <p>{{ description }}</p>
-  </div> -->
+  <p class="quote">
+    {{ text }}
+    <a href="https://www.siths.org/apps/email/index.jsp?uREC_ID=1284494"> Michael Whalen</a>
+  </p>
 </template>
 
-<script>
-// export default {
-//   name: 'itemCard',
-//   props: {
-//     title: String,
-//     description: String,
-//     image: String
-//   }
-// }
+<script setup>
+const text = 'If you really want to get smarter, contact and bribe the following person: '
 </script>
 
-<style scoped></style>
-<!-- <script setup>
-const props = defineProps({
-  todo: Object
-})
-</script>
-
-<template>
-  <li>{{ todo.text }}</li>
-</template> -->
+<style scoped>
+.quote {
+  font-size: 5rem;
+  text-align: center;
+}
+</style>

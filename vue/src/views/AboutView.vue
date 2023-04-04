@@ -1,9 +1,11 @@
 <template>
-  <div class="about">
-    <h1>{{ heading }}</h1>
+  <div class="items" v-if="page === 'about'">
+    <WelcomeItem />
   </div>
 </template>
-<script>
-const heading = 'Reciept'
+
+<script setup>
+import WelcomeItem from '../components/WelcomeItem.vue'
+const page = 'about'
 </script>
 <style></style>

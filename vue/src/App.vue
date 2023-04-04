@@ -5,20 +5,15 @@
       <h3>{{ quote }}</h3>
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/about">Cart</RouterLink>
       </nav>
     </div>
   </header>
-  <!-- <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
-  </nav> -->
   <RouterView />
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-// import HelloWorld from './components/HelloWorld.vue'
 
 const title = 'Braincell Market'
 const quote = 'Wish to get smarter? We got your back!'
@@ -58,10 +53,10 @@ header .wrapper {
   text-align: center;
 }
 header .green {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #b5bec6;
 }
 </style>
