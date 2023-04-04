@@ -1,11 +1,8 @@
 <template>
-  <div class="items" v-if="page === 'about'">
-    <WelcomeItem />
-  </div>
+  <WelcomeItem />
 </template>
 
 <script setup>
 import WelcomeItem from '../components/WelcomeItem.vue'
-const page = 'about'
 </script>
 <style></style>

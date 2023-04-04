@@ -1,20 +1,17 @@
 <template>
   <div class="product">
-    <div class="items" v-if="page === 'product'">
-      <div class="itemCards" v-for="item in items">
-        <h2 class="name">{{ item.name }}</h2>
-        <img :src="item.img" alt="item image" />
-        <h3>Anime name: {{ item.origin }}</h3>
-        <h3>IQ: {{ item.Iq }}</h3>
-        <h3>Cost: ${{ item.cost }}</h3>
-        <button @click.prevent="notify">Add to Cart</button>
-      </div>
+    <div class="itemCards" v-for="item in items">
+      <h2 class="name">{{ item.name }}</h2>
+      <img :src="item.img" alt="item image" />
+      <h3>Anime name: {{ item.origin }}</h3>
+      <h3>IQ: {{ item.Iq }}</h3>
+      <h3>Cost: ${{ item.cost }}</h3>
+      <button @click.prevent="notify">Add to Cart</button>
     </div>
   </div>
 </template>
 
 <script setup>
-const page = 'product'
 const items = [
   {
     name: 'Yoshiko Hanabatake',
@@ -164,7 +161,6 @@ const items = [
     cost: '10,000'
   }
 ]
-const about = {}
 
 function notify() {
   alert('Sorry, the website was taken down due to the involvement of DCJS')
