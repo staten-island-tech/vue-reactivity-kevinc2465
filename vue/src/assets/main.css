@@ -1,33 +1,13 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+*,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: #764D61;
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-body{
-  background-color:rgb(36, 41, 47);
-}
+body {
+  font-size: 5rem;
 }
